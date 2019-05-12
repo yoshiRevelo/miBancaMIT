@@ -211,7 +211,7 @@ class PayViewController: UIViewController {
     }
     
     private func locationServicesAlert(){
-        let alertController = UIAlertController(title: "Oups!", message: "Para poder usar esta aplicación, necesitamos saber tu ubicación.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "¡Oups!", message: "Para usar esta funcionalidad, necesitamos saber tu ubicación.", preferredStyle: .alert)
         
         let configAction = UIAlertAction(title: "Ir a configuración", style: .default) { (action) in
             if let url = URL(string: UIApplication.openSettingsURLString){
