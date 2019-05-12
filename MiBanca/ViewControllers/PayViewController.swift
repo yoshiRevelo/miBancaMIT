@@ -44,6 +44,7 @@ class PayViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         _ = checkPermissions()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -64,7 +65,7 @@ class PayViewController: UIViewController {
     //MARK: - User interaction
     
     @IBAction func payButtonPressed(_ sender: Any) {
-        
+        locationManager.requestLocation()
         
         guard  let latitude = userLatitude else {
             message(title: "Error", message: "No podemos obtener tu ubicación, ve a configuración y activalo para usar esta aplicación.")
