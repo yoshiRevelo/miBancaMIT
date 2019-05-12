@@ -67,11 +67,6 @@ class AddCardViewController: UIViewController {
     //MARK: - User interaction
     
     @IBAction func saveCardButtonPressed(_ sender: Any) {
-        let date = Date()
-        let year = DateFormatter()
-        year.dateFormat = "yy"
-        let formattedYear = year.string(from: date)
-        
         
         if cardNameTextField.text != "" && cardNumberTextField.text != "" && selectedMonth != "" && selectedYear != ""{
             
