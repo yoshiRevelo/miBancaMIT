@@ -39,7 +39,6 @@ class PayViewController: UIViewController {
         navigationItem.title = "Pagar"
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,16 +64,15 @@ class PayViewController: UIViewController {
     //MARK: - User interaction
     
     @IBAction func payButtonPressed(_ sender: Any) {
-        locationManager.requestLocation()
         
         
         guard  let latitude = userLatitude else {
-            message(title: "Error", message: "No podemos obtener tu ubicación")
+            message(title: "Error", message: "No podemos obtener tu ubicación, ve a configuración y activalo para usar esta aplicación.")
             return
             
         }
         guard let longitude = userLongitude else {
-            message(title: "Error", message: "Selecciona una tarjeta")
+            message(title: "Error", message: "No podemos obtener tu ubicación, ve a configuración y activalo para usar esta aplicación.")
             return
         }
         
