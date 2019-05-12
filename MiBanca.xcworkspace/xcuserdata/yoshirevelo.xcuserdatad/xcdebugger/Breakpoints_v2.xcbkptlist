@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MiBanca/ViewControllers/CreateAccountViewController.swift"
-            timestampString = "579327473.381744"
+            timestampString = "579331823.1839449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MiBanca/ViewControllers/AddCardViewController.swift"
-            timestampString = "579320482.1833889"
+            timestampString = "579331823.18426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "saveCardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>

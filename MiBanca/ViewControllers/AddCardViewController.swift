@@ -17,21 +17,23 @@ class AddCardViewController: UIViewController {
     weak var delegate: AddCardDelegate?
 
     private var currentTextField: UITextField?
+    private var monthsArray: [String] = []
+    private var yearsArray: [String] = []
+    
+    private var selectedMonth = ""
+    private var selectedYear = ""
+    private var pickerViewComponentsArray: [[String]] = []
     
     //MARK:  - Outlets
     @IBOutlet weak var cardNameTextField: UITextField!
     
     @IBOutlet weak var cardNumberTextField: UITextField!
     
-    @IBOutlet weak var monthCardExpirationDate: UITextField!
-    
-    @IBOutlet weak var yearCardExpirationDate: UITextField!
-    
-    
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Agregar Tarjeta"
+        pickerConfiguration()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,14 +73,11 @@ class AddCardViewController: UIViewController {
         let formattedYear = year.string(from: date)
         
         
-        if cardNameTextField.text != "" && cardNumberTextField.text != "" && monthCardExpirationDate.text != "" && yearCardExpirationDate.text != ""{
+        if cardNameTextField.text != "" && cardNumberTextField.text != "" && selectedMonth != "" && selectedYear != ""{
             
-            let checkMonth = Int(monthCardExpirationDate.text!)!
             
             if cardNumberTextField.text!.count < 16 {
                 message(title: "Tarjeta Inválida", message: "Ingresa los 16 números de tu tarjeta")
-            }else if checkMonth > 12 || checkMonth < 1 || yearCardExpirationDate.text! < formattedYear{
-                message(title: "Error", message: "Verifica el que el mes o el año estén correctos.")
             }else{
                 //guardar los datos
                 
@@ -104,7 +103,7 @@ class AddCardViewController: UIViewController {
                             
                             cardInfo.name = cardNameTextField.text!.aesEncrypt(key: key, iv: iv)
                             cardInfo.cardnumber = cardNumberTextField.text!.aesEncrypt(key: key, iv: iv)
-                            cardInfo.cardExpirationDate = "\(monthCardExpirationDate.text!)/\(yearCardExpirationDate.text!)".aesEncrypt(key: key, iv: iv)
+                            cardInfo.cardExpirationDate = "\(selectedMonth)/\(selectedYear)".aesEncrypt(key: key, iv: iv)
                             
                             cardInfo.user = user
                             delegate?.addCardDidCreate(user: user, cardInfo: cardInfo)
@@ -121,7 +120,7 @@ class AddCardViewController: UIViewController {
                             
                             cardInfo.name = cardNameTextField.text!.aesEncrypt(key: key, iv: iv)
                             cardInfo.cardnumber = cardNumberTextField.text!.aesEncrypt(key: key, iv: iv)
-                            cardInfo.cardExpirationDate = "\(monthCardExpirationDate.text!)/\(yearCardExpirationDate.text!)".aesEncrypt(key: key, iv: iv)
+                            cardInfo.cardExpirationDate = "\(selectedMonth)/\(selectedYear)".aesEncrypt(key: key, iv: iv)
                             
                             cardInfo.user = user
                             
@@ -139,7 +138,7 @@ class AddCardViewController: UIViewController {
                     
                     cardInfo.name = cardNameTextField.text!.aesEncrypt(key: key, iv: iv)
                     cardInfo.cardnumber = cardNumberTextField.text!.aesEncrypt(key: key, iv: iv)
-                    cardInfo.cardExpirationDate = "\(monthCardExpirationDate.text!)/\(yearCardExpirationDate.text!)".aesEncrypt(key: key, iv: iv)
+                    cardInfo.cardExpirationDate = "\(selectedMonth)/\(selectedYear)".aesEncrypt(key: key, iv: iv)
                     
                     cardInfo.user = user
                     delegate?.addCardDidCreate(user: user, cardInfo: cardInfo)
@@ -154,6 +153,35 @@ class AddCardViewController: UIViewController {
     }
     
     //MARK: - Private Methods
+    
+    private func pickerConfiguration(){
+        for i in 1 ... 12{
+            if i < 10{
+                monthsArray.append("0\(String(i))")
+            }else{
+                monthsArray.append(String(i))
+            }
+        }
+        
+        
+        let date = Date()
+        let years = DateFormatter()
+        years.dateFormat = "yy"
+        let formattedYear = years.string(from: date)
+        let yearInt = Int(formattedYear)!
+        
+        selectedYear = formattedYear
+        selectedMonth = "01"
+        
+        print(selectedYear)
+        print(selectedMonth)
+        
+        for i in yearInt ... yearInt+15 {
+            yearsArray.append(String(i))
+        }
+        
+        pickerViewComponentsArray = [monthsArray, yearsArray]
+    }
     
     private func message(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -178,10 +206,6 @@ extension AddCardViewController: UITextFieldDelegate{
         case cardNameTextField:
             cardNumberTextField.becomeFirstResponder()
         case cardNumberTextField:
-            monthCardExpirationDate.becomeFirstResponder()
-        case monthCardExpirationDate:
-            yearCardExpirationDate.becomeFirstResponder()
-        case yearCardExpirationDate:
             currentTextField?.resignFirstResponder()
         default:
             break
@@ -209,14 +233,6 @@ extension AddCardViewController: UITextFieldDelegate{
             let maxLength = 16
             let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
             result = newString.length <= maxLength
-        case monthCardExpirationDate:
-            let maxLength = 2
-            let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-            result = newString.length <= maxLength
-        case yearCardExpirationDate:
-            let maxLength = 2
-            let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-            result = newString.length <= maxLength
         default:
             break
         }
@@ -225,3 +241,29 @@ extension AddCardViewController: UITextFieldDelegate{
     }
 }
 
+extension AddCardViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 2
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerViewComponentsArray[component].count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerViewComponentsArray[component][row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch component {
+        case 0:
+            selectedMonth = pickerViewComponentsArray[component][row]
+            print(selectedMonth)
+        case 1:
+            selectedYear = pickerViewComponentsArray[component][row]
+            print(selectedYear)
+        default:
+            break
+        }
+    }
+}
