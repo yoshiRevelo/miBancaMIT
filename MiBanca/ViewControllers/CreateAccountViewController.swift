@@ -91,7 +91,7 @@ class CreateAccountViewController: UIViewController {
                         let delegate = UIApplication.shared.delegate as! AppDelegate
                         
                         let board = UIStoryboard(name: "Main", bundle: nil)
-                        let loginViewController = board.instantiateViewController(withIdentifier: "LoginViewController") as! UIViewController
+                        let loginViewController = board.instantiateViewController(withIdentifier: "LoginViewController")
                         delegate.window?.rootViewController = loginViewController
                     }
                     
