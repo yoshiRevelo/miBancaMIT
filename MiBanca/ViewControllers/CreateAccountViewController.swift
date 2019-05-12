@@ -25,7 +25,6 @@ class CreateAccountViewController: UIViewController {
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        //try! Locksmith.deleteDataForUserAccount(userAccount: "123456".encrypt(), inService: "098765".encrypt())
         // Do any additional setup after loading the view.
     }
     
