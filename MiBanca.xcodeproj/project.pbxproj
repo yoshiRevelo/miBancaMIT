@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442B7DE12285D584002E7BB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DE02285D584002E7BB8 /* AppDelegate.swift */; };
+		442B7DE32285D584002E7BB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DE22285D584002E7BB8 /* ViewController.swift */; };
+		442B7DE62285D584002E7BB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442B7DE42285D584002E7BB8 /* Main.storyboard */; };
+		442B7DE92285D584002E7BB8 /* MiBanca.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DE72285D584002E7BB8 /* MiBanca.xcdatamodeld */; };
+		442B7DEB2285D585002E7BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442B7DEA2285D585002E7BB8 /* Assets.xcassets */; };
+		442B7DEE2285D585002E7BB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442B7DEC2285D585002E7BB8 /* LaunchScreen.storyboard */; };
+		442B7DF72285D918002E7BB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DF62285D918002E7BB8 /* LoginViewController.swift */; };
+		442B7DF92285D936002E7BB8 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DF82285D936002E7BB8 /* CreateAccountViewController.swift */; };
+		442B7DFB2285E7DD002E7BB8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DFA2285E7DD002E7BB8 /* Utils.swift */; };
+		442B7DFE2285FF33002E7BB8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7DFD2285FF33002E7BB8 /* CardsViewController.swift */; };
+		442B7E05228641F0002E7BB8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E04228641F0002E7BB8 /* CoreDataManager.swift */; };
+		442B7E072286460A002E7BB8 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E062286460A002E7BB8 /* AddCardViewController.swift */; };
+		442B7E0E22866206002E7BB8 /* Transactions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0822866206002E7BB8 /* Transactions+CoreDataClass.swift */; };
+		442B7E0F22866206002E7BB8 /* Transactions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0922866206002E7BB8 /* Transactions+CoreDataProperties.swift */; };
+		442B7E1022866206002E7BB8 /* CardsInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0A22866206002E7BB8 /* CardsInfo+CoreDataClass.swift */; };
+		442B7E1122866206002E7BB8 /* CardsInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0B22866206002E7BB8 /* CardsInfo+CoreDataProperties.swift */; };
+		442B7E1222866206002E7BB8 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0C22866206002E7BB8 /* User+CoreDataClass.swift */; };
+		442B7E1322866206002E7BB8 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B7E0D22866206002E7BB8 /* User+CoreDataProperties.swift */; };
+		44F6F90E228756DF008550F2 /* SavedCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6F90D228756DF008550F2 /* SavedCardsTableViewCell.swift */; };
+		44F6F91022875C03008550F2 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6F90F22875C03008550F2 /* PayViewController.swift */; };
+		44F6F91222878390008550F2 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6F91122878390008550F2 /* TransactionsViewController.swift */; };
+		44F6F91422878BEC008550F2 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6F91322878BEC008550F2 /* TransactionsTableViewCell.swift */; };
+		44F6F916228791DC008550F2 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6F915228791DC008550F2 /* TransactionDetailViewController.swift */; };
+		FD0D85C38DE43EA2FA772024 /* Pods_MiBanca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2626F419D8C9D841719D18E5 /* Pods_MiBanca.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2626F419D8C9D841719D18E5 /* Pods_MiBanca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiBanca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		442B7DDD2285D584002E7BB8 /* MiBanca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiBanca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442B7DE02285D584002E7BB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		442B7DE22285D584002E7BB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		442B7DE52285D584002E7BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442B7DE82285D584002E7BB8 /* MiBanca.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiBanca.xcdatamodel; sourceTree = "<group>"; };
+		442B7DEA2285D585002E7BB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442B7DED2285D585002E7BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442B7DEF2285D585002E7BB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442B7DF62285D918002E7BB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		442B7DF82285D936002E7BB8 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		442B7DFA2285E7DD002E7BB8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		442B7DFD2285FF33002E7BB8 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		442B7E04228641F0002E7BB8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		442B7E062286460A002E7BB8 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		442B7E0822866206002E7BB8 /* Transactions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transactions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		442B7E0922866206002E7BB8 /* Transactions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transactions+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		442B7E0A22866206002E7BB8 /* CardsInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		442B7E0B22866206002E7BB8 /* CardsInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		442B7E0C22866206002E7BB8 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		442B7E0D22866206002E7BB8 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		44F6F90D228756DF008550F2 /* SavedCardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardsTableViewCell.swift; sourceTree = "<group>"; };
+		44F6F90F22875C03008550F2 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		44F6F91122878390008550F2 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		44F6F91322878BEC008550F2 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		44F6F915228791DC008550F2 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		72BD6D627503A69A40F8C854 /* Pods-MiBanca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiBanca.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiBanca/Pods-MiBanca.release.xcconfig"; sourceTree = "<group>"; };
+		B8EDBF694C2A8267EE7C00AC /* Pods-MiBanca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiBanca.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiBanca/Pods-MiBanca.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442B7DDA2285D584002E7BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0D85C38DE43EA2FA772024 /* Pods_MiBanca.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442B7DD42285D584002E7BB8 = {
+			isa = PBXGroup;
+			children = (
+				442B7DDF2285D584002E7BB8 /* MiBanca */,
+				442B7DDE2285D584002E7BB8 /* Products */,
+				5DE1851656B6CAE514972503 /* Pods */,
+				75808F9AB62392390F93A59E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		442B7DDE2285D584002E7BB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442B7DDD2285D584002E7BB8 /* MiBanca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442B7DDF2285D584002E7BB8 /* MiBanca */ = {
+			isa = PBXGroup;
+			children = (
+				44F6F9192287B534008550F2 /* StoryBoards */,
+				44F6F90C228756C4008550F2 /* Views */,
+				442B7DFF2285FFD2002E7BB8 /* Models */,
+				442B7DFC2285E7F5002E7BB8 /* Utils */,
+				442B7DF52285D905002E7BB8 /* ViewControllers */,
+				442B7DE02285D584002E7BB8 /* AppDelegate.swift */,
+				442B7DE22285D584002E7BB8 /* ViewController.swift */,
+				442B7DEA2285D585002E7BB8 /* Assets.xcassets */,
+				442B7DEF2285D585002E7BB8 /* Info.plist */,
+				442B7DE72285D584002E7BB8 /* MiBanca.xcdatamodeld */,
+			);
+			path = MiBanca;
+			sourceTree = "<group>";
+		};
+		442B7DF52285D905002E7BB8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				442B7DF62285D918002E7BB8 /* LoginViewController.swift */,
+				442B7DF82285D936002E7BB8 /* CreateAccountViewController.swift */,
+				442B7DFD2285FF33002E7BB8 /* CardsViewController.swift */,
+				442B7E062286460A002E7BB8 /* AddCardViewController.swift */,
+				44F6F90F22875C03008550F2 /* PayViewController.swift */,
+				44F6F91122878390008550F2 /* TransactionsViewController.swift */,
+				44F6F915228791DC008550F2 /* TransactionDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		442B7DFC2285E7F5002E7BB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				442B7DFA2285E7DD002E7BB8 /* Utils.swift */,
+				442B7E04228641F0002E7BB8 /* CoreDataManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		442B7DFF2285FFD2002E7BB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				442B7E0822866206002E7BB8 /* Transactions+CoreDataClass.swift */,
+				442B7E0922866206002E7BB8 /* Transactions+CoreDataProperties.swift */,
+				442B7E0A22866206002E7BB8 /* CardsInfo+CoreDataClass.swift */,
+				442B7E0B22866206002E7BB8 /* CardsInfo+CoreDataProperties.swift */,
+				442B7E0C22866206002E7BB8 /* User+CoreDataClass.swift */,
+				442B7E0D22866206002E7BB8 /* User+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44F6F90C228756C4008550F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44F6F90D228756DF008550F2 /* SavedCardsTableViewCell.swift */,
+				44F6F91322878BEC008550F2 /* TransactionsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44F6F9192287B534008550F2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				442B7DE42285D584002E7BB8 /* Main.storyboard */,
+				442B7DEC2285D585002E7BB8 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		5DE1851656B6CAE514972503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8EDBF694C2A8267EE7C00AC /* Pods-MiBanca.debug.xcconfig */,
+				72BD6D627503A69A40F8C854 /* Pods-MiBanca.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75808F9AB62392390F93A59E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2626F419D8C9D841719D18E5 /* Pods_MiBanca.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442B7DDC2285D584002E7BB8 /* MiBanca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442B7DF22285D585002E7BB8 /* Build configuration list for PBXNativeTarget "MiBanca" */;
+			buildPhases = (
+				29467B0F95C62D3491A59321 /* [CP] Check Pods Manifest.lock */,
+				442B7DD92285D584002E7BB8 /* Sources */,
+				442B7DDA2285D584002E7BB8 /* Frameworks */,
+				442B7DDB2285D584002E7BB8 /* Resources */,
+				407FCE72DAA38E1E3C27FC90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiBanca;
+			productName = MiBanca;
+			productReference = 442B7DDD2285D584002E7BB8 /* MiBanca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442B7DD52285D584002E7BB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yoshi Revelo";
+				TargetAttributes = {
+					442B7DDC2285D584002E7BB8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 442B7DD82285D584002E7BB8 /* Build configuration list for PBXProject "MiBanca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442B7DD42285D584002E7BB8;
+			productRefGroup = 442B7DDE2285D584002E7BB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442B7DDC2285D584002E7BB8 /* MiBanca */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442B7DDB2285D584002E7BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442B7DEE2285D585002E7BB8 /* LaunchScreen.storyboard in Resources */,
+				442B7DEB2285D585002E7BB8 /* Assets.xcassets in Resources */,
+				442B7DE62285D584002E7BB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29467B0F95C62D3491A59321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiBanca-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407FCE72DAA38E1E3C27FC90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MiBanca/Pods-MiBanca-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiBanca/Pods-MiBanca-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442B7DD92285D584002E7BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442B7DF92285D936002E7BB8 /* CreateAccountViewController.swift in Sources */,
+				442B7DFE2285FF33002E7BB8 /* CardsViewController.swift in Sources */,
+				44F6F91222878390008550F2 /* TransactionsViewController.swift in Sources */,
+				442B7E1322866206002E7BB8 /* User+CoreDataProperties.swift in Sources */,
+				44F6F90E228756DF008550F2 /* SavedCardsTableViewCell.swift in Sources */,
+				442B7DF72285D918002E7BB8 /* LoginViewController.swift in Sources */,
+				442B7DE32285D584002E7BB8 /* ViewController.swift in Sources */,
+				44F6F91022875C03008550F2 /* PayViewController.swift in Sources */,
+				442B7E0F22866206002E7BB8 /* Transactions+CoreDataProperties.swift in Sources */,
+				442B7E072286460A002E7BB8 /* AddCardViewController.swift in Sources */,
+				442B7E1022866206002E7BB8 /* CardsInfo+CoreDataClass.swift in Sources */,
+				442B7E1122866206002E7BB8 /* CardsInfo+CoreDataProperties.swift in Sources */,
+				442B7DE92285D584002E7BB8 /* MiBanca.xcdatamodeld in Sources */,
+				44F6F91422878BEC008550F2 /* TransactionsTableViewCell.swift in Sources */,
+				442B7E05228641F0002E7BB8 /* CoreDataManager.swift in Sources */,
+				442B7DE12285D584002E7BB8 /* AppDelegate.swift in Sources */,
+				44F6F916228791DC008550F2 /* TransactionDetailViewController.swift in Sources */,
+				442B7E0E22866206002E7BB8 /* Transactions+CoreDataClass.swift in Sources */,
+				442B7DFB2285E7DD002E7BB8 /* Utils.swift in Sources */,
+				442B7E1222866206002E7BB8 /* User+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442B7DE42285D584002E7BB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442B7DE52285D584002E7BB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442B7DEC2285D585002E7BB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442B7DED2285D585002E7BB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442B7DF02285D585002E7BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		442B7DF12285D585002E7BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442B7DF32285D585002E7BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EDBF694C2A8267EE7C00AC /* Pods-MiBanca.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67NLW62QPS;
+				INFOPLIST_FILE = MiBanca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshiRevelo.MiBanca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442B7DF42285D585002E7BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BD6D627503A69A40F8C854 /* Pods-MiBanca.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67NLW62QPS;
+				INFOPLIST_FILE = MiBanca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshiRevelo.MiBanca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442B7DD82285D584002E7BB8 /* Build configuration list for PBXProject "MiBanca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442B7DF02285D585002E7BB8 /* Debug */,
+				442B7DF12285D585002E7BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442B7DF22285D585002E7BB8 /* Build configuration list for PBXNativeTarget "MiBanca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442B7DF32285D585002E7BB8 /* Debug */,
+				442B7DF42285D585002E7BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		442B7DE72285D584002E7BB8 /* MiBanca.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				442B7DE82285D584002E7BB8 /* MiBanca.xcdatamodel */,
+			);
+			currentVersion = 442B7DE82285D584002E7BB8 /* MiBanca.xcdatamodel */;
+			path = MiBanca.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 442B7DD52285D584002E7BB8 /* Project object */;
+}
